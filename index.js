@@ -9,7 +9,7 @@ const erbBlock = new RegExp('<%(\s|\S)*?\%>(\s|\S)*?<%(\s|\S)*?(end|END)(\s|\S)*
 
 // export processor
 module.exports = {
-  processors = {
+  processors: {
     'js-erb': {
       preprocess: function (text, filename) {
         const lintableText = text
