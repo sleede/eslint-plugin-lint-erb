@@ -3,9 +3,9 @@
  * @author original credits to https://github.com/s4san/eslint-plugin-lint-erb
  */
 
-const erbString = new RegExp('\'<%(.*?)%>\'', 'g');
-const erbExpression = new RegExp('<%(.*?)%>', 'g');
-const erbBlock = new RegExp('<%([sS])*?%>([sS])*?<%([sS])*?(end|END)([sS])*?%>', 'g');
+const erbString = new RegExp('\'<%(.*?)\%>\'', 'g');
+const erbExpression = new RegExp('<%(.*?)\%>', 'g');
+const erbBlock = new RegExp('<%(\s|\S)*?\%>(\s|\S)*?<%(\s|\S)*?(end|END)(\s|\S)*?\%>', 'g');
 
 // export processor
 module.exports = {
