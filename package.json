@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-lint-erb",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Allow eslinting, erb files.",
   "keywords": [
     "eslint",
