@@ -23,13 +23,7 @@ Add `lint-erb` to the plugins section of your `.eslintrc` configuration file. Yo
 
 ```json
 {
-  "plugins": ["lint-erb"],
-  "overrides": [
-    {
-      "files": ["*.js.erb"],
-      "processor": "lint-erb/js-erb"
-    }
-  ]
+  "plugins": ["lint-erb"]
 }
 ```
 

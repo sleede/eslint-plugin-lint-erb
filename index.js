@@ -8,7 +8,7 @@ const erbExpression = new RegExp('<%(.*?)\%>', 'g');
 // export processor
 module.exports = {
   processors: {
-    'js-erb': {
+    '.js.erb': {
       preprocess: function (text, filename) {
         const lintableText = text
           .replace(erbExpression, "'Ignored Ruby Expression.'");
