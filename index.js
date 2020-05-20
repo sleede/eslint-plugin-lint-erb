@@ -17,10 +17,10 @@ module.exports = {
           .replace(erbBlock, '/* \'Ignored Ruby Block.\' */')
           .replace(erbExpression, '\'Ignored Ruby Expression.\'');
 
-        return [lintableText];
+        return [{ text: lintableText, filename }];
       },
       postprocess: function (messages, filename) {
-        return messages[0];
+        return [].concat(...messages);
       },
       supportsAutofix: true
     }
